@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.day5_13;
 
 import java.util.Arrays;
 import java.util.HashSet;

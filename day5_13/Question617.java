@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.day5_13;
 
 /**
  * Created by Song on 2018/5/13.

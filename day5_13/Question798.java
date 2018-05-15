@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.day5_13;
 
 import java.util.ArrayList;
 import java.util.List;
