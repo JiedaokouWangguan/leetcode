@@ -14,9 +14,25 @@ public class Question230{
     Deque<TreeNode> stack = new ArrayDeque<>();
     public int kthSmallest(TreeNode r, int k)
     {
-            
+        helper(r);
+        return array.get(k-1);
     }
 
-    private void helper(TreeNode r,)
-
+    private void helper(TreeNode r)
+    {
+        while(r != null || stack.size() != 0)
+        {
+            while(r != null)
+            {
+                stack.push(r);
+                r = r.left;
+            }
+            if(stack.size() != 0)
+            {
+                r = stack.pop();
+                array.add(r.val);
+                r = r.right;
+            }
+        }
+    }
 }
