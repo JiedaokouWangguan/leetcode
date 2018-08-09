@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+// 牛逼
 public class Question395{
     public int longestSubstring(String s, int k) {
         char[] str = s.toCharArray();
