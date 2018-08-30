@@ -49,5 +49,5 @@ public class Question640{
             x = a;
             value = b;
         }
-    }>)}}}>)}}
+    }
 }

@@ -1,4 +1,5 @@
 public class Question194{
+    /*
     awk '{
         for(i = 1;i<=NF;i++){
             if(NR == 1){
@@ -13,4 +14,5 @@ public class Question194{
             print s[i];
         }
     }' file.txt
+    */
 }
