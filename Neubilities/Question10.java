@@ -1,5 +1,5 @@
 public class Question10{
-    // 6.34 0- 7.0
+    // 6.34 0- 7.10
     public boolean isMatch(String s, String p) {
         int sLen = s.length();
         int pLen = p.length();
