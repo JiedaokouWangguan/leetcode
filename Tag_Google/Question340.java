@@ -1,4 +1,5 @@
 public class Question340{
+    /*
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
         if(k == 0) return 0;
         char[] chars = s.toCharArray();
@@ -23,5 +24,32 @@ public class Question340{
             }      
         }          
         return max;
+    }
+    */
+
+    public int lengthOfLongestSubstringKDistinct(String s, int k) {
+        if(k == 0) return 0;
+        int distinct = 0;
+        int left = 0;
+        int right = 0;
+        char[] chars = s.toCharArray();
+        int[] count = new int[128];
+        int result = 0;
+        while(right < chars.length){
+            char cLeft = chars[left];
+            char cRight = chars[right];
+            if(distinct < k || distinct == k && count[right] != 0){
+                if(count[right] == 0) distinct += 1;
+                count[right] += 1;
+                right += 1;
+                result = Math.max(result, right - left);
+            }
+            else {
+                if(count[left] == 1) distinct -= 1;
+                count[left] -= 1;
+                left += 1;
+            }
+        }
+        return result;
     }
 }
